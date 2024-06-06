@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#waste-segregation">Waste Segregation</a></li>
+                <li><a href="#waste-disposal">Waste Disposal</a></li>
+                <li><a href="#sanitization">Sanitization</a></li>
+                <li><a href="#integration">Integration & Innovation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <div class="stats">
+                <div class="stat">Total Waste Collected: <span id="total-waste">0</span> kg</div>
+                <div class="stat">Waste Segregated: <span id="waste-segregated">0</span>%</div>
+                <div class="stat">Sanitization Events: <span id="sanitization-events">0</span></div>
+            </div>
+            <div class="chart-container">
+                <canvas id="wasteChart"></canvas>
+            </div>
+        </section>
+        <section id="waste-segregation">
+            <h1>Waste Segregation</h1>
+            <div class="module">
+                <h2>Automated Waste Segregation</h2>
+                <p>Monitor AI-powered sorting and robotic arms activities.</p>
+                <div id="sorting-process">Visual representation of waste sorting process</div>
+            </div>
+            <div class="module">
+                <h2>Community Segregation Initiatives</h2>
+                <p>Educational campaigns, color-coded bins locator, and mobile app download section.</p>
+            </div>
+        </section>
+        <section id="waste-disposal">
+            <h1>Waste Disposal</h1>
+            <div class="module">
+                <h2>Efficient Collection Systems</h2>
+                <p>Real-time tracking of GPS-enabled trucks and bin monitoring system.</p>
+            </div>
+            <div class="module">
+                <h2>Advanced Disposal Technologies</h2>
+                <p>Information about waste-to-energy and recycling plants.</p>
+            </div>
+        </section>
+        <section id="sanitization">
+            <h1>Improved Sanitization</h1>
+            <div class="module">
+                <h2>Public Sanitation Facilities</h2>
+                <p>Interactive map showing locations of public toilets and hand sanitizer stations.</p>
+                <div id="map"></div>
+            </div>
+            <div class="module">
+                <h2>Community Hygiene Programs</h2>
+                <p>Awareness campaigns and clean-up drive information.</p>
+            </div>
+        </section>
+        <section id="integration">
+            <h1>Integration & Innovation</h1>
+            <div class="module">
+                <h2>Data-Driven Decision Making</h2>
+                <p>Analytics dashboard with waste generation patterns and collection schedules.</p>
+            </div>
+            <div class="module">
+                <h2>Collaborative Efforts</h2>
+                <p>Public-private partnerships and community engagement.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Waste Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
